@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#191a1c">
+  <meta name="description" content="DISCOVER THAILAND — สารานุกรมจังหวัด 17 จังหวัด ประวัติ คำขวัญ ดอกไม้ ต้นไม้ แผนที่ อำเภอ อาหาร และการท่องเที่ยว">
+  <title>DISCOVER THAILAND — สารานุกรมจังหวัดไทย</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/duck-icon.png">
+  <script defer src="assets/js/data/provinces.js"></script>
+  <script defer src="assets/js/data/history.js"></script>
+  <script defer src="assets/js/data/profiles.js"></script>
+  <script defer src="assets/js/live.js"></script>
+  <script defer src="assets/js/extras.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-theme="dark">
+  <!-- Small SVG icon library: no external icon library or animation loops. -->
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16.2 7.8-2.4 6-6 2.4 2.4-6z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.6 8.1c0 4.2-8.6 10.5-8.6 10.5S3.4 12.3 3.4 8.1a4.4 4.4 0 0 1 8.6-1.2 4.4 4.4 0 0 1 8.6 1.2z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15.2A8.9 8.9 0 0 1 8.8 4 9 9 0 1 0 20 15.2z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m17.1-7.1-1.5 1.5M6.4 17.6l-1.5 1.5m14.2 0-1.5-1.5M6.4 6.4 4.9 4.9"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9.5 5 7 7-7 7"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6.1 6.7 1-4.8 4.7 1.1 6.7-5.9-3.1-5.9 3.1 1.1-6.7-4.8-4.7 6.7-1z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M13 5h6v6M19 5l-9 9"/><path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15m6-12v15"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M6 16V9a3 3 0 0 1 3-3h3m-1 12h4a3 3 0 0 0 3-3v-3"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M4 3v8a3 3 0 0 0 6 0V3m-3 0v18M16 3c4 2 4 7 4 11h-4V3zm2 11v7"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 6h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4zM13 6v12"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="m5 10 2-5h10l2 5M4 10h16v8H4zM6 18v2m12-2v2M7 14h2m6 0h2"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="16" rx="3"/><path d="M5 11h14M7 19v2m10-2v2M8 15h2m4 0h2"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16m-13 0 1 14h8l1-14M9 7V4h6v3m-5 4v6m4-6v6"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 5h16l-6.5 7v7l-3 1v-8z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 10h2m2 0h2m-6 4h2m2 0h2m-4 7v-4h2v4"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1.8-9.7A6 6 0 0 1 20 12a3.5 3.5 0 0 1-1 6z"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.6-6.4M3 4v5h5"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1zm0 0v14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  </svg>
+
+  <div class="site-shell">
+    <header class="site-header panel" aria-label="แถบนำทางหลัก">
+      <div class="brand" id="brandHome" role="button" tabindex="0" aria-label="กลับไปหน้าแรก จังหวัดเชียงใหม่">
+        <span class="brand-mark"><img src="assets/img/duck-icon.png" alt="Duck icon" class="brand-logo-image"></span>
+        <div class="brand-copy"><div class="brand-name">DISCOVER <strong>THAILAND</strong></div><div class="brand-subtitle">สารานุกรมจังหวัดไทย • 17 จังหวัดพร้อมบทความ • สารบัญ 77 จังหวัด</div></div>
+      </div>
+      <div class="header-tools">
+        <label class="search-field" for="searchInput"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input id="searchInput" type="search" placeholder="ค้นหาจังหวัด สถานที่ หรืออาหาร..." autocomplete="off" aria-label="ค้นหาจังหวัด สถานที่ท่องเที่ยว หรืออาหาร"><kbd class="search-shortcut">/</kbd></label>
+        <div class="province-select-wrap"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><select id="provinceSelect" aria-label="เลือกจังหวัด"></select><svg class="icon select-arrow" aria-hidden="true"><use href="#i-down"/></svg></div>
+        <button type="button" class="icon-button favorites-toggle" id="favoriteOpen" aria-label="เปิดรายการโปรด"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span class="count-badge" id="favoriteCount" hidden>0</span></button>
+        <button type="button" class="icon-button" id="themeToggle" aria-label="สลับโหมดสี" title="สลับโหมดสี"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg></button>
+      </div>
+    </header>
+
+    <nav class="browse-nav panel" aria-label="เลือกภูมิภาคและจังหวัด">
+      <div class="region-row"><div class="nav-heading"><svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg><span>ภูมิภาค</span></div><div class="region-tabs" id="regionTabs" role="group" aria-label="กรองภูมิภาค"></div></div>
+      <div class="province-row"><div class="nav-heading"><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg><span>จังหวัด</span></div><button type="button" class="scroll-arrow" id="provincePrev" aria-label="เลื่อนจังหวัดไปทางซ้าย"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button><div class="province-pills" id="provincePills" aria-label="จังหวัดทั้งหมด"></div><button type="button" class="scroll-arrow" id="provinceNext" aria-label="เลื่อนจังหวัดไปทางขวา"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button><output class="province-status" id="provinceStatus" aria-label="จำนวนจังหวัดในรายการและลำดับจังหวัดที่เลือก" aria-live="polite"><strong id="provinceCount">ทั้งหมด 17 จังหวัด</strong><span id="provincePosition">ลำดับ 1/17</span></output></div>
+    </nav>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="heroTitle">
+        <div class="hero-media" id="heroMedia"></div><div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-top"><span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span id="heroRegion"></span></span><span class="hero-top-note">DISCOVER THAILAND <span class="decor-dot"></span> 17 PROVINCES</span></div>
+        <div class="hero-bottom"><div class="hero-information"><span class="hero-overline">สัมผัสเสน่ห์ของแต่ละจังหวัด</span><h1 id="heroTitle">เชียงใหม่</h1><p class="hero-english" id="heroEnglish">CHIANG MAI</p><p class="hero-description" id="heroSlogan"></p><div class="hero-tags" id="heroTags"></div><div class="hero-links"><a class="btn btn-primary" id="heroTat" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-compass"/></svg>เว็บไซต์ท่องเที่ยว<svg class="icon icon-small"><use href="#i-external"/></svg></a><a class="btn btn-secondary" id="heroMaps" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-map"/></svg>Google Maps</a><a class="btn btn-quiet" id="heroOfficial" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-building"/></svg>เว็บไซต์จังหวัด</a></div></div><aside class="hero-facts" aria-label="เวลาและสภาพอากาศปัจจุบันของจังหวัด">
+          <div class="fact fact-live-time">
+            <span class="fact-label"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>เวลาท้องถิ่น (ประเทศไทย UTC+7)</span>
+            <strong id="heroClock" class="live-clock" aria-label="เวลาประเทศไทย">--:--:--</strong>
+            <small id="heroClockDate" class="fact-caption">กำลังตรวจสอบเวลา...</small>
+          </div>
+          <div class="fact fact-live-weather">
+            <span class="fact-label"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg>อุณหภูมิปัจจุบัน <button id="weatherRefresh" class="weather-refresh" type="button" title="อัปเดตข้อมูลสภาพอากาศ" aria-label="อัปเดตอุณหภูมิปัจจุบัน"><svg class="icon" aria-hidden="true"><use href="#i-history"/></svg></button></span>
+            <strong id="heroTemp" class="live-temp">กำลังโหลด...</strong>
+            <small id="heroCurrentConditions" class="fact-caption">กำลังเชื่อมต่อบริการสภาพอากาศ</small>
+            <small id="heroWeatherUpdated" class="fact-caption weather-updated" aria-live="polite"></small>
+            <small id="heroWeatherLocation" class="fact-caption weather-location"></small>
+          </div>
+          <div class="fact"><span class="fact-label"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>ช่วงเวลาท่องเที่ยวที่แนะนำ</span><strong id="heroSeason"></strong></div>
+          <div class="fact"><span class="fact-label"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>การเดินทาง</span><strong id="heroTransport"></strong></div>
+          <div class="weather-credit"><a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">ข้อมูลอากาศ: Open-Meteo</a><span> • ข้อมูลจากแบบจำลอง ณ จุดอ้างอิง</span></div>
+        </aside></div>
+      </section>
+
+      <section class="explore-section" aria-labelledby="exploreTitle">
+        <div class="section-heading"><div><p class="section-overline">EXPLORE THAILAND</p><h2 id="exploreTitle">สำรวจข้อมูลการท่องเที่ยว</h2><p class="section-subtitle">ข้อมูลท่องเที่ยว ประวัติความเป็นมา สัญลักษณ์ประจำจังหวัด อำเภอ และวัฒนธรรมท้องถิ่น</p></div><span id="contextLabel" class="context-label"></span></div>
+        <div class="tabs" id="tabs" role="tablist" aria-label="เลือกประเภทข้อมูล"><button type="button" class="tab active" role="tab" aria-selected="true" data-tab="attractions"><svg class="icon"><use href="#i-pin"/></svg>สถานที่ท่องเที่ยว</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="foods"><svg class="icon"><use href="#i-food"/></svg>อาหารท้องถิ่น</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="itinerary"><svg class="icon"><use href="#i-route"/></svg>แผนเที่ยวแนะนำ</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="travel_tips"><svg class="icon"><use href="#i-info"/></svg>ข้อมูลการเดินทาง</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="history"><svg class="icon"><use href="#i-book"/></svg>ประวัติความเป็นมา</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="profile"><svg class="icon"><use href="#i-building"/></svg>ข้อมูลจังหวัดฉบับเต็ม</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="map_explore"><svg class="icon"><use href="#i-map"/></svg>แผนที่สถานที่</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="trip_planner"><svg class="icon"><use href="#i-route"/></svg>จัดทริปและงบ</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="forecast"><svg class="icon"><use href="#i-cloud"/></svg>อากาศ 7 วัน</button><button type="button" class="tab" role="tab" aria-selected="false" data-tab="all_provinces"><svg class="icon"><use href="#i-building"/></svg>ครบ 77 จังหวัด</button></div>
+        <div id="searchNotice" class="search-notice" hidden></div>
+        <div id="filters" class="filter-toolbar" hidden><div class="filter-label"><svg class="icon"><use href="#i-filter"/></svg>หมวดหมู่</div><div id="categoryFilters" class="category-filters"></div><span id="resultsCount" class="results-count"></span></div>
+        <div id="contentView" class="content-view" role="tabpanel" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer panel"><div class="footer-about"><div class="footer-brand"><svg class="icon"><use href="#i-compass"/></svg>DISCOVER THAILAND</div><p>คู่มือท่องเที่ยว 17 จังหวัดแบบละเอียด พร้อมสารบัญ 77 จังหวัด แผนที่ แพลนเที่ยว และสภาพอากาศ</p><small>เวลาเป็นเวลาประเทศไทยจากนาฬิกาอุปกรณ์ • อากาศอ้างอิง Open-Meteo ซึ่งเป็นข้อมูลแบบจำลอง ณ จุดอ้างอิงของจังหวัด • รีวิว เวลาเปิดและค่าเข้าเป็นข้อมูลประกอบการวางแผน ควรตรวจสอบก่อนเดินทาง</small></div><div class="footer-links"><strong>เว็บไซต์ที่เกี่ยวข้อง</strong><a href="https://www.tmd.go.th" target="_blank" rel="noopener noreferrer">กรมอุตุนิยมวิทยา<svg class="icon"><use href="#i-external"/></svg></a><a href="https://www.railway.co.th" target="_blank" rel="noopener noreferrer">การรถไฟแห่งประเทศไทย<svg class="icon"><use href="#i-external"/></svg></a><a href="https://www.transport.co.th" target="_blank" rel="noopener noreferrer">บริษัท ขนส่ง จำกัด<svg class="icon"><use href="#i-external"/></svg></a></div><div class="footer-hotlines"><strong>สายด่วนที่ควรทราบ</strong><div><span>1672</span>ข้อมูลการท่องเที่ยว ททท.</div><div><span>1155</span>ตำรวจท่องเที่ยว</div><div><span>1669</span>การแพทย์ฉุกเฉิน</div></div><div class="footer-bottom">© 2026 DISCOVER THAILAND <span>สารานุกรมจังหวัดไทย</span></div></footer>
+  </div>
+
+  <div class="overlay" id="detailOverlay" hidden><button type="button" class="overlay-dim" data-close="detail" aria-label="ปิดรายละเอียด"></button><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><div id="detailContent"></div></section></div>
+  <div class="overlay" id="favoritesOverlay" hidden><button type="button" class="overlay-dim" data-close="favorites" aria-label="ปิดรายการโปรด"></button><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="favoritesTitle"><div class="drawer-header"><div><p class="section-overline">SAVED PLACES</p><h2 id="favoritesTitle">รายการโปรด <span id="drawerCount"></span></h2></div><button type="button" class="icon-button" data-close="favorites" aria-label="ปิดรายการโปรด"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="favoritesItems" class="drawer-items"></div><div class="drawer-bottom"><button type="button" class="btn btn-danger-quiet" id="clearFavorites"><svg class="icon"><use href="#i-trash"/></svg>ล้างรายการโปรดทั้งหมด</button></div></aside></div>
+</body>
+</html>
